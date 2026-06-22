@@ -2,4 +2,5 @@ pandas
 matplotlib
 scikit-learn
 japanize-matplotlib
+setuptools
 
