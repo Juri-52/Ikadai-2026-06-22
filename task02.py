@@ -46,10 +46,10 @@ print(matrix)
 # TODO 5: テストデータをグラフで確認する
 # - 正解ラベルと予測ラベルの違いが分かるように工夫する
 # - タイトル、軸ラベル、凡例をつける
-print("x_test: ", list(x_test["勉強時間"]))
-print(y_test)
-
 plt.scatter(list(x_test["勉強時間"]),list(y_test),label="正解")
-plt.scatter(x_test,pred,label="予測")
+plt.scatter(list(x_test["勉強時間"]),list(pred),label="予測")
+plt.title("勉強時間と合否の相関")
+plt.xlabel("勉強時間")
+plt.ylabel("合否")
 plt.legend()
 plt.show()
